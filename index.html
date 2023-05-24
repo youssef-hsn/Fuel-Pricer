@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo Background Removed.png" style="border-radius: 50%;" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="index.js" type="module"></script>
+    <title>Dollar to fuel converter</title>
+</head>
+<body>
+    <div class="stand-out">
+        <header class="head">
+            <figure>
+                <img src="images/Dollar to Gas ratio.png" alt="Ratio" class="logo">
+            </figure>
+        </header>
+        <main>
+            <section id="input">
+                <select name="input type" id="input-type">
+                    <option value="DTL">تحويل من دولار لليتر</option>
+                    <option value="LTD">تحويل من ليتر لدولار</option>
+                </select>
+                <input type="number" id="number-input" placeholder="ادخل عدد الدولارات" min="1">
+                <article class="price-sect">
+                    <input type="number" id="price" min="1">
+                    <select name="price list" id="price-select">
+                        <option value="diesel-price">سعر المازوت الرسمي</option>
+                        <option value="diesel-h-price">سعر المازوت المميز</option>
+                        <option value="UNL95-price">سعر البانزين الرسمي</option>
+                        <option value="custom-price" selected>سعر خاص</option>
+                    </select>
+                </article>
+            </section>
+            <section id="output" dir="rtl">
+                <p id="normal-output" class="output"></p>
+                <p id="simple-output" class="output"></p>
+                <p id="note-output" class="output"></p>
+                <p id="error-output" class="output"></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

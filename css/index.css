@@ -1,0 +1,80 @@
+body {
+    font-size: 62.5%;
+    background-color: gainsboro;
+
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stand-out {
+    background-color: white;
+    padding: 2em;
+
+    border-radius: 1em;
+    max-width: 100%;
+}
+
+.logo {
+    object-fit: contain;
+    max-width: 30em;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+
+    font-size: 2em;
+}
+
+#number-input {
+    width: 15em;
+    text-align: center;
+}
+#price {
+    max-width: 3em;
+    min-width: 1em;
+}
+#price, #price-select {
+    text-align: center;
+}
+#price-select {
+    width: fit-content;
+}
+
+#output {
+    margin-top: 3em;
+}
+
+.output {
+    background-color: rgba(255, 255, 0, 0.435);
+    font-size: 2em;
+    text-align: center;
+
+    margin: 0;
+}
+#simple-output {
+    margin: .3em 0 1em 0;
+}
+#note-output {
+    color: blue;
+}
+#error-output {
+    color: brown;
+}
+em {
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+@media (max-width:600px) {
+    body {
+        justify-content: start;
+    }
+    
+}
